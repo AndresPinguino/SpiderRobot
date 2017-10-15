@@ -99,8 +99,8 @@ def axis_to_angle(x, y, z):
     v = w - coxa_len
     alpha_tmp = (pow(femur_len, 2) - pow(tibia_len, 2) + pow(v, 2) + pow(z, 2)) / 2 / femur_len / sqrt(pow(v, 2) + pow(z, 2))
     if (alpha_tmp > 1 or alpha_tmp < -1):
-        print "x=%f y=%f v=%f w=%f" % (x, y, v, w)
-        print "alpha=%f" % alpha_tmp
+        print ( "x=%f y=%f v=%f w=%f" % (x, y, v, w))
+        print ( "alpha=%f" % alpha_tmp)
         if (alpha_tmp > 1):
             alpha_tmp = 1
         else:
@@ -109,8 +109,8 @@ def axis_to_angle(x, y, z):
 
     beta_tmp = (pow(femur_len, 2) + pow(tibia_len, 2) - pow(v, 2) - pow(z, 2)) / 2 / femur_len / tibia_len
     if (beta_tmp > 1 or beta_tmp < -1):
-        print "x=%f y=%f v=%f w=%f" % (x, y, v, w)
-        print "beta=%f" % beta_tmp
+        print ( "x=%f y=%f v=%f w=%f" % (x, y, v, w))
+        print ( "beta=%f" % beta_tmp)
         if (beta_tmp > 1):
             beta_tmp = 1
         else:
@@ -577,7 +577,7 @@ curve(pos=[(200, -200, z_stand_draw), (200, 200, z_stand_draw)], color=color.yel
 '''
 x_len=x_range+body_x/2
 y_len=y_range+body_y/2
-print "x_len,y_len = %f %f" %(x_len, y_len)
+print ( "x_len,y_len = %f %f" %(x_len, y_len))
 curve(pos=[(-x_len, y_len, z_stand_draw), (x_len, y_len, z_stand_draw),
            (x_len, -y_len, z_stand_draw), (-x_len, -y_len, z_stand_draw),
            (-x_len, y_len, z_stand_draw)], color=color.red)
@@ -592,20 +592,20 @@ body = box(frame=body_frame, pos=(0, 0, body_z / 2), length=body_x, height=body_
 for i in range(0, 4):
     coxa[i], femur[i], tibia[i] = create_legs(i)
 
-print "x_range, x_range, x_range =%f %f %f" % (x_range, y_range, z_range)
+print ( "x_range, x_range, x_range =%f %f %f" % (x_range, y_range, z_range))
 
-print "Legs initial"
+print ( "Legs initial")
 set_legs(0, x_range, y_range, z_range)
 set_legs(1, x_range, y_range, z_range)
 set_legs(2, x_range, y_range, z_range)
 set_legs(3, x_range, y_range, z_range)
 sleep(1)
 
-print "Walk init"
+print ( "Walk init")
 walk_init()
 sleep(1)
 
-print "stand"
+print ( "stand")
 stand()
 sleep(1)
 
@@ -615,7 +615,7 @@ sleep(1)
 while 1:
     rate(10)
 
-    print "Legs init 100,80,42"
+    print ( "Legs init 100,80,42")
     # init the legs position
     set_legs(0, 100, 80, 42)
     set_legs(1, 100, 80, 42)
@@ -623,47 +623,46 @@ while 1:
     set_legs(3, 100, 80, 42)
     sleep(1)
 
-    print "Legs init by default"
+    print ( "Legs init by default")
     set_legs(0, x_range, y_range, z_range)
     set_legs(1, x_range, y_range, z_range)
     set_legs(2, x_range, y_range, z_range)
     set_legs(3, x_range, y_range, z_range)
     sleep(1)
 
-    print "sit"
+    print ( "sit")
     sit()
     sleep(1)
 
-    print "stand"
+    print ( "stand")
     stand()
     sleep(1)
 
 
-    print "body move"
+    print ( "body move")
     body_move_test(body_x/4,body_x/4, .5)
     sleep(3)
 
-    print "Walk init"
+    print ( "Walk init")
     walk_init()
     sleep(1)
 
-    print "walk stand"
+    print ( "walk stand")
     stand()
     sleep(1)
 
-    print "walk turn right"
+    print ( "walk turn right")
     turn_right(4)
     sleep(1)
 
-    print "walk turn left"
+    print ( "walk turn left")
     turn_left(4)
     sleep(1)
 
-    print "walk step_forward"
+    print ( "walk step_forward")
     step_forward(20)
     sleep(1)
 
-    print "walk step_back"
+    print ( "walk step_back")
     step_back(20)
     sleep(3)
-
