@@ -97,8 +97,7 @@ def axis_to_angle(x, y, z):
         w = -1 * (sqrt(pow(x, 2) + pow(y, 2)))
 
     v = w - coxa_len
-    alpha_tmp = (pow(femur_len, 2) - pow(tibia_len, 2) + pow(v, 2) + pow(z, 2)) / 2 / femur_len / sqrt(
-        pow(v, 2) + pow(z, 2))
+    alpha_tmp = (pow(femur_len, 2) - pow(tibia_len, 2) + pow(v, 2) + pow(z, 2)) / 2 / femur_len / sqrt(pow(v, 2) + pow(z, 2))
     if (alpha_tmp > 1 or alpha_tmp < -1):
         print "x=%f y=%f v=%f w=%f" % (x, y, v, w)
         print "alpha=%f" % alpha_tmp
