@@ -2,7 +2,7 @@
 
 Links:
 
-https://www.thingiverse.com/thing:1009659
+https://www.thingiverse.com/thing:1009659 version para servos SG90
 
 https://drive.google.com/drive/folders/1mvT-h3ZZSBYNPqT6P2pmCaelV2xFY8w2
 
