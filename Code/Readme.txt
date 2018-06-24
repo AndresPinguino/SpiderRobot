@@ -1,5 +1,5 @@
-Before compile code, Instal library wimleers-flexitimer2-7338cfb.
+Before compile code, Install library wimleers-flexitimer2-7338cfb.
 
-Process to instal library:
+Process to install library:
 Copy >> wimleers-flexitimer2-7338cfb folder
 Paste >> Documents\Arduino\libraries
