@@ -13,3 +13,5 @@ https://www.youtube.com/watch?v=9Pos9pE8xwU
 http://www.instructables.com/id/DIY-Spider-RobotQuad-robot-Quadruped/
 
 http://www.instructables.com/id/DIY-Spider-Robot-PART-II-Remote-control/
+
+https://www.thingiverse.com/thing:2204279 version para servos MG90
