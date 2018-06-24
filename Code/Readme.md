@@ -1,4 +1,4 @@
-#Install SerialCommand and FlexiTimer2
+# Install SerialCommand and FlexiTimer2
 
 FlexiTimer2:
 
